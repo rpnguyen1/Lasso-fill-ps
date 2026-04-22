@@ -1,0 +1,14 @@
+body {
+    color: white;
+    padding: 0 16px;
+  }
+  li:before {
+    content: '• ';
+    width: 5em;
+  }
+
+  #layers {
+    border: 1px solid #808080;
+    border-radius: 4px;
+    padding: 16px;
+  }

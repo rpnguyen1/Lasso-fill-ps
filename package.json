@@ -1,0 +1,7 @@
+{
+  "name": "uxp-template-ps-starter",
+  "version": "1.0.0",
+  "description": "Lasso fill plugin for Adobe Photoshop.",
+  "author": "Rekmodus",
+  "license": "Apache-2.0"
+}

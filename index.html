@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="main.js"></script> 
+  <link rel="stylesheet" href="style.css">   
+</head>
+<body>
+
+  <sp-heading size="M">Lasso Fill</sp-heading>
+
+  <sp-divider></sp-divider>
+
+  <!-- Toggle -->
+  <sp-checkbox id="enabled" checked>Enable</sp-checkbox>
+
+  <!-- Opacity -->
+  <div style="display: flex; flex-direction: column;">
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+      <sp-field-label style="font-size: 12px;" for="opacity">Opacity</sp-field-label>
+
+      <sp-textfield
+        id="opacityInput"
+        type="number"
+        min="0"
+        max="100"
+        value="100"
+        style="width: 60px;"
+      ></sp-textfield>
+    </div>
+
+    <sp-slider
+      id="opacitySlider"
+      min="0"
+      max="100"
+      value="100"
+      style="flex: 1;"
+    ></sp-slider>
+  </div>
+
+  <!-- Anti-alias -->
+  <!-- <sp-checkbox id="antialias">Anti-alias</sp-checkbox> -->
+
+  <!-- Blend mode -->
+  <!-- <sp-field-label for="blendMode">Blend Mode</sp-field-label>
+  <sp-picker id="blendMode">
+    <sp-menu-item value="normal">Normal</sp-menu-item>
+    <sp-menu-item value="overlay">Overlay</sp-menu-item>
+    <sp-menu-item value="saturation">Saturation</sp-menu-item>
+    <sp-menu-item value="exclusion">Exclusion</sp-menu-item>
+  </sp-picker> -->
+
+  <!-- Fill method -->
+  <!-- <sp-field-label for="fillMode">Fill Method</sp-field-label>
+  <sp-picker id="fillMode">
+    <sp-menu-item value="foreground">Foreground Color</sp-menu-item>
+    <sp-menu-item value="pattern">Pattern</sp-menu-item>
+  </sp-picker> -->
+
+  <sp-divider></sp-divider>
+
+  <!-- Debug buttons -->
+  <!-- <sp-button id="testFill">Test Fill</sp-button> -->
+
+  <!-- <sp-body id="logs">No logs</sp-body> -->
+
+</body>
+</html>
