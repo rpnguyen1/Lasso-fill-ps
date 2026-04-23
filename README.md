@@ -1,6 +1,6 @@
 # Introduction to Lasso Fill For Photoshop
 
-Automatically fill lasso like in other popular art programs
+Automatically fills lasso like in other popular art programs. Its possible to do manually or with shortcuts but automatically filling in the same action as the lasso is impossible without plugins. 
 
 
 
@@ -29,9 +29,9 @@ Automatically fill lasso like in other popular art programs
 
 2. Optionally change the opacity, blend mode, or fill method
 
-## todo
+## limitations
 
-1. I wanted to get the undo to undo both the lasso fill and lasso selection but I couldn't get it to work properly.
+1. When undoing a lasso fill, the action does not undo both the lasso fill and lasso selection.
 
 2. I wanted to get the alt key to also turn into a color picker just like when you use a brush but I also could not get that to work.
 
