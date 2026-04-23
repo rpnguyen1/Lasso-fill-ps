@@ -14,7 +14,7 @@ Automatically fills lasso like in other popular art programs. Its possible to do
 
 ## Installation
 
-1. Download the plugin zip file [lasso.zip](https://github.com/F-know/F_Record/releases/download/3.0/F_Record.zip), extract it.
+1. Download the plugin zip file [lassofill.zip](https://github.com/rpnguyen1/Lasso-fill-ps/releases/download/1.0/lassofill.zip), extract it.
 
 2. Copy the extracted folder you just created into the corresponding locations in your main Photoshop directory.  
    The main Photoshop directory typically looks like `D:\Adobe Photoshop 2025`.  
