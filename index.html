@@ -6,17 +6,17 @@
 </head>
 <body>
 
-  <sp-heading size="M">Lasso Fill</sp-heading>
+  <sp-heading size="S">Lasso Fill</sp-heading>
 
   <sp-divider></sp-divider>
 
   <!-- Toggle -->
-  <sp-checkbox id="enabled" checked>Enable</sp-checkbox>
+  <sp-checkbox id="enabled" checked>Enable Fill</sp-checkbox>
 
   <!-- Opacity -->
   <div style="display: flex; flex-direction: column;">
     <div style="display: flex; align-items: center; justify-content: space-between;">
-      <sp-field-label style="font-size: 12px;" for="opacity">Opacity</sp-field-label>
+      <sp-detail for="opacity">Opacity</sp-detail>
 
       <sp-textfield
         id="opacityInput"
@@ -30,38 +30,88 @@
 
     <sp-slider
       id="opacitySlider"
+      value-label="%"
+      variant="filled" fill-offset="left"
       min="0"
       max="100"
       value="100"
-      style="flex: 1;"
-    ></sp-slider>
+    >
+      <!-- <sp-label slot="label">Opacity</sp-label> -->
+    </sp-slider>
+
   </div>
 
+  <sp-divider></sp-divider>
+  <!-- <sp-detail>A NICE DIVIDER</sp-detail> -->
   <!-- Anti-alias -->
   <!-- <sp-checkbox id="antialias">Anti-alias</sp-checkbox> -->
-
+<div style="display: flex; flex-direction: column; padding-top: 10px;">
   <!-- Blend mode -->
-  <!-- <sp-field-label for="blendMode">Blend Mode</sp-field-label>
-  <sp-picker id="blendMode">
-    <sp-menu-item value="normal">Normal</sp-menu-item>
-    <sp-menu-item value="overlay">Overlay</sp-menu-item>
-    <sp-menu-item value="saturation">Saturation</sp-menu-item>
-    <sp-menu-item value="exclusion">Exclusion</sp-menu-item>
-  </sp-picker> -->
+  <sp-detail for="blendMode" >Blend Mode</sp-detail>
+  <sp-picker   id="blendMode" style="width: 100%;" placeholder="Normal">
+    <sp-menu slot="options">
+      <sp-menu-item value="normal">Normal</sp-menu-item>
+      <sp-menu-item value="dissolve">Dissolve</sp-menu-item>
+      <sp-menu-item value="behind">Behind</sp-menu-item>
+      <sp-menu-item value="clearEnum">Clear</sp-menu-item>
+      <sp-menu-divider></sp-menu-divider>
+
+      <sp-menu-item value="darken">Darken</sp-menu-item>
+      <sp-menu-item value="multiply">Multiply</sp-menu-item>
+      <sp-menu-item value="colorBurn">Color Burn</sp-menu-item>
+      <sp-menu-item value="linearBurn">Linear Burn</sp-menu-item>
+      <sp-menu-item value="darkerColor">Darker Color</sp-menu-item>
+      <sp-menu-divider></sp-menu-divider>
+
+      <sp-menu-item value="lighten">Lighten</sp-menu-item>
+      <sp-menu-item value="screen">Screen</sp-menu-item>
+      <sp-menu-item value="colorDodge">Color Dodge</sp-menu-item>
+      <sp-menu-item value="linearDodge">Linear Dodge (Add)</sp-menu-item>
+      <sp-menu-item value="lighterColor">Lighter Color</sp-menu-item>
+      <sp-menu-divider></sp-menu-divider>
+
+      <sp-menu-item value="overlay">Overlay</sp-menu-item>
+      <sp-menu-item value="softLight">Soft Light</sp-menu-item>
+      <sp-menu-item value="hardLight">Hard Light</sp-menu-item>
+      <sp-menu-item value="vividLight">Vivid Light</sp-menu-item>
+      <sp-menu-item value="linearLight">Linear Light</sp-menu-item>
+      <sp-menu-item value="pinLight">Pin Light</sp-menu-item>
+      <sp-menu-item value="hardMix">Hard Mix</sp-menu-item>
+      <sp-menu-divider></sp-menu-divider>
+
+      <sp-menu-item value="difference">Difference</sp-menu-item>
+      <sp-menu-item value="exclusion">Exclusion</sp-menu-item>
+      <sp-menu-item value="blendSubtraction">Subtract</sp-menu-item>
+      <sp-menu-item value="blendDivide">Divide</sp-menu-item>
+      <sp-menu-divider></sp-menu-divider>
+
+      <sp-menu-item value="hue">Hue</sp-menu-item>
+      <sp-menu-item value="saturation">Saturation</sp-menu-item>
+      <sp-menu-item value="color">Color</sp-menu-item>
+      <sp-menu-item value="luminosity">Luminosity</sp-menu-item>
+
+    </sp-menu>
+
+  </sp-picker >
 
   <!-- Fill method -->
-  <!-- <sp-field-label for="fillMode">Fill Method</sp-field-label>
-  <sp-picker id="fillMode">
-    <sp-menu-item value="foreground">Foreground Color</sp-menu-item>
-    <sp-menu-item value="pattern">Pattern</sp-menu-item>
-  </sp-picker> -->
+  <sp-detail for="fillMode" style="margin-top: 10px;">Fill Method</sp-detail>
+  <sp-picker style="width: 100%;" id="fillMode" placeholder="Foreground Color">
+    <sp-menu slot="options">
+      <sp-menu-item value="foregroundColor">Foreground Color</sp-menu-item>
+      <sp-menu-item value="backgroundColor">Background Color</sp-menu-item>
+    </sp-menu>
+  </sp-picker >
+</div>
 
+  
   <sp-divider></sp-divider>
 
-  <!-- Debug buttons -->
-  <!-- <sp-button id="testFill">Test Fill</sp-button> -->
-
-  <!-- <sp-body id="logs">No logs</sp-body> -->
+  <div style="display: flex; margin-top: 30px;">
+      <sp-link href="https://github.com" style="margin-left: auto;">
+          GitHub
+      </sp-link>
+  </div>
 
 </body>
 </html>

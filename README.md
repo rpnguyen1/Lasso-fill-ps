@@ -1,4 +1,41 @@
-# Introduction
+# Introduction to Lasso Fill For Photoshop
+
+Automatically fill lasso like in other popular art programs
+
+
+
+**Plugin Principle**: When you do any type of selection, it automatically does the fill operation and deselects. 
+
+**Current Plugin Version**: 1.0
+
+**Supported Operating Systems**: Windows 
+
+**Supported Photoshop Versions**: Photoshop 2022 ~ 2025
+
+## Installation
+
+1. Download the plugin zip file [lasso.zip](https://github.com/F-know/F_Record/releases/download/3.0/F_Record.zip), extract it.
+
+2. Copy the extracted folder you just created into the corresponding locations in your main Photoshop directory.  
+   The main Photoshop directory typically looks like `D:\Adobe Photoshop 2025`.  
+   You can tell if it’s the correct directory if you see the Photoshop executable `Photoshop.exe` (not a shortcut).
+
+   - Place the folder in the path similar to `C:\Program Files\Adobe\Adobe Photoshop 2025\Plug-ins`.
+
+
+## Usage Instructions
+
+1. Click "Enable Lasso" to activate lasso fill. 
+
+2. Optionally change the opacity, blend mode, or fill method
+
+## todo
+
+1. I wanted to get the undo to undo both the lasso fill and lasso selection but I couldn't get it to work properly.
+
+2. I wanted to get the alt key to also turn into a color picker just like when you use a brush but I also could not get that to work.
+
+
 
 how to install
 
@@ -8,23 +45,3 @@ get the .ccx file
 unzip file
 go to C:\Program Files\Adobe\Adobe Photoshop 2024\Plug-ins\
 copy the folder you get into the "plug ins" folder
-
-
-This starter plugin is a good place to get started when developing for Photoshop. It does not rely on any frameworks or build steps -- hence the name "Vanilla".
-
-## Compatibility
-
-Since Photoshop 
-
-## Getting Started
-
-Make sure Photoshop is up and running first. First, add the plugin to the "Developer Workspace" in the UXP Developer Tools (UDT) application.
-  * If you selected "Create Plugin..." earlier, it will have already be there with the plugin ID and name you specified. 
-  * Otherwise, click "Add Plugin" and select the `manifest.json` file in the corresponding plugin folder.
-
-Click the ••• button next to the corresponding workspace entry, and click "Load". Switch over to Photoshop, and the plugin's panel will be running. 
-
-## Documentation
-
-* Read more about creating and debugging plugins using the UDT application [here](https://developer.adobe.com/photoshop/uxp/2022/guides/devtool/udt-walkthrough/). 
-* We build on this starter template and show you how to [edit a document](https://developer.adobe.com/photoshop/uxp/2022/guides/getting-started/editing-the-document/) and [write a file](https://developer.adobe.com/photoshop/uxp/2022/guides/getting-started/writing-a-file/) using UXP. 
