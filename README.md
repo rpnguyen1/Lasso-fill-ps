@@ -2,14 +2,13 @@
 
 Automatically fills lasso like in other popular art programs. Its possible to do manually or with shortcuts but automatically filling in the same action as the lasso is impossible without plugins. 
 
+<img width="280" height="332" alt="image" src="https://github.com/user-attachments/assets/12b1ff82-fe62-436d-a6ae-b5243829a076" />
+
 ibisPaint lasso fill examples:
 
 https://www.youtube.com/shorts/ZWSyt6N9EXM
 
 https://www.youtube.com/shorts/iGhqcjcMtmo
-
-
-
 
 
 **How it works**: When you do any type of selection, it automatically does the fill operation and deselects. 
