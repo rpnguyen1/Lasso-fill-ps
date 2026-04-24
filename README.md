@@ -12,7 +12,7 @@ https://www.youtube.com/shorts/iGhqcjcMtmo
 
 
 
-**Plugin Principle**: When you do any type of selection, it automatically does the fill operation and deselects. 
+**How it works**: When you do any type of selection, it automatically does the fill operation and deselects. 
 
 **Current Plugin Version**: 1.0
 
