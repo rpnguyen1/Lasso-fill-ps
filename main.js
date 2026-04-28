@@ -308,3 +308,4 @@ enabledCheckbox.addEventListener("change", (e) => {
 });
 
 updateListenerState(enabledCheckbox.checked);
+
