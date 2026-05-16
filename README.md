@@ -21,7 +21,7 @@ https://www.youtube.com/shorts/iGhqcjcMtmo
 
 ## Installation
 
-1. Download the plugin zip file [lassofill.zip](https://github.com/rpnguyen1/Lasso-fill-ps/releases/download/1.0/lassofill.zip), extract it.
+1. Download the plugin zip file [lassofill.zip](https://github.com/rpnguyen1/Lasso-fill-ps/releases/download/2.0/lassofill.zip), extract it.
 
 2. Copy the extracted folder you just created into the corresponding locations in your main Photoshop directory.  
    The main Photoshop directory typically looks like `D:\Adobe Photoshop 2025`.  
