@@ -162,6 +162,11 @@ const onLasso = async (event, descriptor) => {
 
             const selectionBounds = app.activeDocument.selection.bounds;
 
+            const layer = app.activeDocument.activeLayers[0];
+
+            const preserveTransparency =
+                layer.transparentPixelsLocked === true;
+
             if (selectionBounds == null) {
                 console.warn("Selection too small, skipping fill.");
                 return; 
@@ -178,6 +183,7 @@ const onLasso = async (event, descriptor) => {
                         _obj: "fill",
                         mode: { _enum: "blendMode", _value: settings.blendMode},
                         opacity: { _unit: "percentUnit", _value: settings.opacity },
+                        preserveTransparency: preserveTransparency,
                         using: { _enum: "fillContents", _value: settings.fillMode }
                     },
                     {
